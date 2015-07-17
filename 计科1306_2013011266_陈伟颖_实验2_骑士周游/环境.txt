@@ -1,0 +1,5 @@
+系统 windows 8.1
+编译器 code::blocks
+编译语言 C++/C混用
+
+说明 在.exe中一闪而过，在cbp以及cpp文件中可以利用调试看出结果

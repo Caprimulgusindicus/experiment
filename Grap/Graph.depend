@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1421486937 source:c:\users\fsszns\desktop\graph\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<vector>
+
