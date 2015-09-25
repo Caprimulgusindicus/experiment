@@ -1,0 +1,35 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY mux_6x1 IS
+	PORT
+	(
+		d0,d1,d2,d3,d4,d5	: IN	STD_LOGIC_VECTOR(3 DOWNTO 0);
+		dout	: OUT	STD_LOGIC_VECTOR(3 DOWNTO 0);
+		sel		: IN	STD_LOGIC_VECTOR(2 DOWNTO 0)
+	);
+END mux_6x1;
+ARCHITECTURE a OF mux_6x1 IS
+	
+BEGIN
+
+PROCESS (sel)
+BEGIN
+
+CASE sel IS
+	WHEN "000" =>dout<=d0;
+	WHEN "001" =>dout<=d1;
+	WHEN "010" =>dout<=d2;
+	WHEN "011" =>dout<=d3;
+	WHEN "100" =>dout<=d4;
+	WHEN "101" =>dout<=d5;
+	WHEN others =>NULL;
+	
+	
+END CASE;
+
+
+END PROCESS; 
+
+END a;

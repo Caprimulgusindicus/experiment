@@ -1,0 +1,55 @@
+#!/bin/bash
+ce=0
+cd=0
+c1c=0
+cb=0
+ca=0
+total=0
+people=0
+aver=0
+mark=0
+ID=0
+#cat pc.txt|while read line
+##读入采用IFS的办法，逐行输入
+SAVEDIFS=$IFS
+IFS=:
+while read ID mark
+do
+
+if  [ $mark -lt "60" ]; then 
+echo $ID $mark>>E 
+ce=`expr $ce + 1`
+total=`expr $total + $mark` 
+fi
+##对每一行的mark进行分类
+##假如满足条件，把对应的统计数加上
+if  [ $mark -ge "60" -a $mark -lt "70" ] ;then 
+echo $ID $mark>>D 
+cd=`expr $cd + 1`
+total=`expr $total + $mark` 
+fi
+
+if [ $mark -ge "70" -a $mark -lt "80" ] ;then 
+echo $ID $mark>>C 
+c1c=`expr $c1c + 1`
+total=`expr $total + $mark` 
+fi
+
+if  [ $mark -ge "80" -a $mark -lt "90" ];then 
+echo $ID $mark>>B 
+cb=`expr $cb + 1`
+total=`expr $total + $mark` 
+fi
+
+if  [ $mark -ge "90" ] ;then 
+echo $ID $mark>>A 
+ca=`expr $ca + 1` 
+total=`expr $total + $mark` 
+fi
+done <pc.txt
+##在读完文件后计算出人数平均值
+people=`expr $ca + $cb + $c1c + $cd + $ce`
+aver=`expr $total / $people`
+echo $aver
+echo $total
+echo $people

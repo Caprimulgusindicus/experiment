@@ -1,0 +1,68 @@
+#!/bin/sh
+while true
+do
+echo "
+----------------------------------------------------------
+USER:${username=`whoami`}      HOST:${host=`hostname -s`}      DATE:${date=`date +%D`}
+----------------------------------------------------------
+		A:创建子目录并复制文件
+		B:文件权限测试
+		C: 文件字符转换
+		D: 文件总数统计
+		E: 文本文件行数统计
+		Q: 退出
+		LR:2013011266
+----------------------------------------------------------
+"
+read a
+echo
+case $a
+in
+A)mkdir  ${pwd=`pwd`}/$username
+cd $pwd
+if [ -d $username ];then
+chmod 755 $username
+echo "aaaaa" > file1
+echo "bbbbb" > file2
+##把文件内容分别送到两个文件里
+mv  file1 $username/
+mv  file2 $username/
+else echo "no such directory"
+fi
+if [ -e $pwd/$username/file1 -a -e $pwd/$username/file2 ];then
+cat $pwd/$username/file1
+cat $pwd/$username/file2 
+echo "success!!"
+else echo "fail! "
+fi
+#移动文件，成功失败显示对应字符
+;;
+B) echo "请输入测试文件 :"
+read URL
+ls -l $URL
+;;
+##测试权限
+C)echo 'file1:'
+tr '[a-z]' '[A-Z]' < $username/file1
+echo 'file2:'
+tr '[a-z]' '[A-Z]' < $username/file2
+;;
+D) echo '请输入文件 :'
+read dir
+echo '共有'
+ls -l $dir | grep '^-' | wc -l
+;;
+##统计目录里文件夹总数
+E) echo '请输入统计计文本文件 :'
+read file
+if [ -e $file ]
+then 
+wc -l $file
+else
+echo 'error!!'
+fi
+;;
+##文本行数统计
+Q) exit 0
+esac
+done

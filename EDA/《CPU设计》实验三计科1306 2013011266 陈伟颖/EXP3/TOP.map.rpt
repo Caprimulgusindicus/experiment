@@ -1,0 +1,312 @@
+Analysis & Synthesis report for TOP
+Tue Jun 23 16:36:38 2015
+Version 6.0 Build 178 04/27/2006 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. User-Specified and Inferred Latches
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Jun 23 16:36:38 2015    ;
+; Quartus II Version          ; 6.0 Build 178 04/27/2006 SJ Full Version ;
+; Revision Name               ; TOP                                      ;
+; Top-level Entity Name       ; TOP                                      ;
+; Family                      ; Stratix                                  ;
+; Total logic elements        ; 140                                      ;
+; Total pins                  ; 13                                       ;
+; Total virtual pins          ; 0                                        ;
+; Total memory bits           ; 0                                        ;
+; DSP block 9-bit elements    ; 0                                        ;
+; Total PLLs                  ; 0                                        ;
+; Total DLLs                  ; 0                                        ;
++-----------------------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++--------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                             ; Setting            ; Default Value      ;
++--------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                              ; TOP                ; TOP                ;
+; Family name                                                        ; Stratix            ; Stratix            ;
+; Use smart compilation                                              ; Off                ; Off                ;
+; Restructure Multiplexers                                           ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                ; Off                ; Off                ;
+; Preserve fewer node names                                          ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                          ; Off                ; Off                ;
+; Verilog Version                                                    ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                       ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                           ; Auto               ; Auto               ;
+; Extract Verilog State Machines                                     ; On                 ; On                 ;
+; Extract VHDL State Machines                                        ; On                 ; On                 ;
+; Add Pass-Through Logic to Inferred RAMs                            ; On                 ; On                 ;
+; DSP Block Balancing                                                ; Auto               ; Auto               ;
+; Maximum DSP Block Usage                                            ; Unlimited          ; Unlimited          ;
+; NOT Gate Push-Back                                                 ; On                 ; On                 ;
+; Power-Up Don't Care                                                ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                       ; Off                ; Off                ;
+; Remove Duplicate Registers                                         ; On                 ; On                 ;
+; Ignore CARRY Buffers                                               ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                             ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                              ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore LCELL Buffers                                               ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                     ; Off                ; Off                ;
+; Optimization Technique -- Stratix/Stratix GX                       ; Balanced           ; Balanced           ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II ; 70                 ; 70                 ;
+; Auto Carry Chains                                                  ; On                 ; On                 ;
+; Auto Open-Drain Pins                                               ; On                 ; On                 ;
+; Remove Duplicate Logic                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                              ; Off                ; Off                ;
+; Perform gate-level register retiming                               ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax             ; On                 ; On                 ;
+; Auto ROM Replacement                                               ; On                 ; On                 ;
+; Auto RAM Replacement                                               ; On                 ; On                 ;
+; Auto DSP Block Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                                    ; On                 ; On                 ;
+; Auto Clock Enable Replacement                                      ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                  ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                             ; Off                ; Off                ;
+; Auto RAM Block Balancing                                           ; On                 ; On                 ;
+; Auto Resource Sharing                                              ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                 ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                 ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                      ; Off                ; Off                ;
+; Maximum Number of M512 Memory Blocks                               ; Unlimited          ; Unlimited          ;
+; Maximum Number of M4K Memory Blocks                                ; Unlimited          ; Unlimited          ;
+; Maximum Number of M-RAM Memory Blocks                              ; Unlimited          ; Unlimited          ;
+; Ignore translate_off and translate_on Synthesis Directives         ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                 ; Off                ; Off                ;
+; Retiming Meta-Stability Register Sequence Length                   ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                       ; Normal compilation ; Normal compilation ;
+; HDL message level                                                  ; Level2             ; Level2             ;
++--------------------------------------------------------------------+--------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+-----------+------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type ; File Name with Absolute Path                                                             ;
++----------------------------------+-----------------+-----------+------------------------------------------------------------------------------------------+
+; TOP.bdf                          ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/TOP.bdf       ;
+; cnt_n6.vhd                       ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/cnt_n6.vhd    ;
+; m10-7.bdf                        ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/m10-7.bdf     ;
+; CNT_M10.bdf                      ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/CNT_M10.bdf   ;
+; seg_dec.vhd                      ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/seg_dec.vhd   ;
+; mux_6x1.vhd                      ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/mux_6x1.vhd   ;
+; cnt_n16x6.bdf                    ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/cnt_n16x6.bdf ;
+; cnt_n16.vhd                      ; yes             ; Other     ; D:/ST/实验/EDA/experiment/《CPU设计》实验三计科1306 2013011266 陈伟颖/EXP3/cnt_n16.vhd   ;
++----------------------------------+-----------------+-----------+------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 140   ;
+;     -- Combinational with no register       ; 85    ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 55    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 51    ;
+;     -- 3 input functions                    ; 48    ;
+;     -- 2 input functions                    ; 40    ;
+;     -- 1 input functions                    ; 1     ;
+;     -- 0 input functions                    ; 0     ;
+;         -- Combinational cells for routing  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 122   ;
+;     -- arithmetic mode                      ; 18    ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 15    ;
+;     -- asynchronous clear/load mode         ; 28    ;
+;                                             ;       ;
+; Total registers                             ; 55    ;
+; Total logic cells in carry chains           ; 24    ;
+; I/O pins                                    ; 13    ;
+; Maximum fan-out node                        ; clr   ;
+; Maximum fan-out                             ; 41    ;
+; Total fan-out                               ; 537   ;
+; Average fan-out                             ; 3.51  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                            ;
++----------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; M512s ; M4Ks ; M-RAMs ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                ;
++----------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------+
+; |TOP                       ; 140 (0)     ; 55           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 13   ; 0            ; 85 (0)       ; 0 (0)             ; 55 (0)           ; 24 (0)          ; 0 (0)      ; |TOP                               ;
+;    |cnt_n16x6:inst1|       ; 63 (0)      ; 24           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 39 (0)       ; 0 (0)             ; 24 (0)           ; 24 (0)          ; 0 (0)      ; |TOP|cnt_n16x6:inst1               ;
+;       |cnt_n16:inst3|      ; 11 (11)     ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |TOP|cnt_n16x6:inst1|cnt_n16:inst3 ;
+;       |cnt_n16:inst4|      ; 11 (11)     ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |TOP|cnt_n16x6:inst1|cnt_n16:inst4 ;
+;       |cnt_n16:inst5|      ; 12 (12)     ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |TOP|cnt_n16x6:inst1|cnt_n16:inst5 ;
+;       |cnt_n16:inst6|      ; 11 (11)     ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |TOP|cnt_n16x6:inst1|cnt_n16:inst6 ;
+;       |cnt_n16:inst7|      ; 8 (8)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |TOP|cnt_n16x6:inst1|cnt_n16:inst7 ;
+;       |cnt_n16:inst|       ; 10 (10)     ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |TOP|cnt_n16x6:inst1|cnt_n16:inst  ;
+;    |cnt_n6:inst4|          ; 4 (4)       ; 3            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |TOP|cnt_n6:inst4                  ;
+;    |m10-7:inst|            ; 42 (0)      ; 28           ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 14 (0)       ; 0 (0)             ; 28 (0)           ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst                    ;
+;       |CNT_M10:inst1|      ; 6 (6)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst1      ;
+;       |CNT_M10:inst2|      ; 6 (6)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst2      ;
+;       |CNT_M10:inst4|      ; 6 (6)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst4      ;
+;       |CNT_M10:inst5|      ; 6 (6)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst5      ;
+;       |CNT_M10:inst6|      ; 7 (7)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst6      ;
+;       |CNT_M10:inst7|      ; 5 (5)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst7      ;
+;       |CNT_M10:inst|       ; 6 (6)       ; 4            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |TOP|m10-7:inst|CNT_M10:inst       ;
+;    |mux_6x1:inst6|         ; 24 (24)     ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 24 (24)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TOP|mux_6x1:inst6                 ;
+;    |seg_dec:inst2|         ; 7 (7)       ; 0            ; 0           ; 0     ; 0    ; 0      ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TOP|seg_dec:inst2                 ;
++----------------------------+-------------+--------------+-------------+-------+------+--------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; mux_6x1:inst6|dout[0]                              ; mux_6x1:inst6|Mux4  ; yes                    ;
+; mux_6x1:inst6|dout[1]                              ; mux_6x1:inst6|Mux4  ; yes                    ;
+; mux_6x1:inst6|dout[2]                              ; mux_6x1:inst6|Mux4  ; yes                    ;
+; mux_6x1:inst6|dout[3]                              ; mux_6x1:inst6|Mux4  ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 55    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 15    ;
+; Number of registers using Asynchronous Clear ; 28    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |TOP|mux_6x1:inst6|Mux3    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 6.0 Build 178 04/27/2006 SJ Full Version
+    Info: Processing started: Tue Jun 23 16:36:35 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EXP3 -c TOP
+Warning: Using design file TOP.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: TOP
+Info: Elaborating entity "TOP" for the top level hierarchy
+Warning: Using design file cnt_n6.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: cnt_n6-a
+    Info: Found entity 1: cnt_n6
+Info: Elaborating entity "cnt_n6" for hierarchy "cnt_n6:inst4"
+Warning (10631): VHDL Process Statement warning at cnt_n6.vhd(17): inferring latch(es) for signal or variable "cs", which holds its previous value in one or more paths through the process
+Info (10041): Verilog HDL or VHDL info at cnt_n6.vhd(17): inferred latch for "cs[5]"
+Info (10041): Verilog HDL or VHDL info at cnt_n6.vhd(17): inferred latch for "cs[4]"
+Info (10041): Verilog HDL or VHDL info at cnt_n6.vhd(17): inferred latch for "cs[3]"
+Info (10041): Verilog HDL or VHDL info at cnt_n6.vhd(17): inferred latch for "cs[2]"
+Info (10041): Verilog HDL or VHDL info at cnt_n6.vhd(17): inferred latch for "cs[1]"
+Info (10041): Verilog HDL or VHDL info at cnt_n6.vhd(17): inferred latch for "cs[0]"
+Warning: Using design file m10-7.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: m10-7
+Info: Elaborating entity "m10-7" for hierarchy "m10-7:inst"
+Warning: Using design file CNT_M10.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: CNT_M10
+Info: Elaborating entity "CNT_M10" for hierarchy "m10-7:inst|CNT_M10:inst"
+Warning: Using design file seg_dec.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: seg_dec-a
+    Info: Found entity 1: seg_dec
+Info: Elaborating entity "seg_dec" for hierarchy "seg_dec:inst2"
+Warning: Using design file mux_6x1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: mux_6x1-a
+    Info: Found entity 1: mux_6x1
+Info: Elaborating entity "mux_6x1" for hierarchy "mux_6x1:inst6"
+Warning (10492): VHDL Process Statement warning at mux_6x1.vhd(21): signal "d0" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10492): VHDL Process Statement warning at mux_6x1.vhd(22): signal "d1" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10492): VHDL Process Statement warning at mux_6x1.vhd(23): signal "d2" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10492): VHDL Process Statement warning at mux_6x1.vhd(24): signal "d3" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10492): VHDL Process Statement warning at mux_6x1.vhd(25): signal "d4" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10492): VHDL Process Statement warning at mux_6x1.vhd(26): signal "d5" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10631): VHDL Process Statement warning at mux_6x1.vhd(17): inferring latch(es) for signal or variable "dout", which holds its previous value in one or more paths through the process
+Info (10041): Verilog HDL or VHDL info at mux_6x1.vhd(17): inferred latch for "dout[0]"
+Info (10041): Verilog HDL or VHDL info at mux_6x1.vhd(17): inferred latch for "dout[1]"
+Info (10041): Verilog HDL or VHDL info at mux_6x1.vhd(17): inferred latch for "dout[2]"
+Info (10041): Verilog HDL or VHDL info at mux_6x1.vhd(17): inferred latch for "dout[3]"
+Warning: Using design file cnt_n16x6.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: cnt_n16x6
+Info: Elaborating entity "cnt_n16x6" for hierarchy "cnt_n16x6:inst1"
+Warning: Using design file cnt_n16.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: cnt_n16-a
+    Info: Found entity 1: cnt_n16
+Info: Elaborating entity "cnt_n16" for hierarchy "cnt_n16x6:inst1|cnt_n16:inst"
+Warning (10492): VHDL Process Statement warning at cnt_n16.vhd(40): signal "CI" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning (10492): VHDL Process Statement warning at cnt_n16.vhd(41): signal "UPDOWN" is read inside the Process Statement but isn't in the Process Statement's sensivitity list
+Warning: Latch mux_6x1:inst6|dout[0] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal cnt_n6:inst4|qq[1]
+Warning: Latch mux_6x1:inst6|dout[1] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal cnt_n6:inst4|qq[1]
+Warning: Latch mux_6x1:inst6|dout[2] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal cnt_n6:inst4|qq[1]
+Warning: Latch mux_6x1:inst6|dout[3] has unsafe behavior
+    Warning: Ports D and ENA on the latch are fed by the same signal cnt_n6:inst4|qq[1]
+Info: Implemented 153 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 10 output pins
+    Info: Implemented 140 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 26 warnings
+    Info: Processing ended: Tue Jun 23 16:36:38 2015
+    Info: Elapsed time: 00:00:03
+
+

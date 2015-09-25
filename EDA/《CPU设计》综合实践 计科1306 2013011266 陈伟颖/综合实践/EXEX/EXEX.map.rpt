@@ -1,0 +1,234 @@
+Analysis & Synthesis report for EXEX
+Tue Jul 07 14:39:48 2015
+Version 6.0 Build 178 04/27/2006 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Jul 07 14:39:48 2015    ;
+; Quartus II Version          ; 6.0 Build 178 04/27/2006 SJ Full Version ;
+; Revision Name               ; EXEX                                     ;
+; Top-level Entity Name       ; EXEX                                     ;
+; Family                      ; MAX II                                   ;
+; Total logic elements        ; 18                                       ;
+; Total pins                  ; 32                                       ;
+; Total virtual pins          ; 0                                        ;
+; UFM blocks                  ; 0                                        ;
++-----------------------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++--------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                             ; Setting            ; Default Value      ;
++--------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                             ; EPM240T100C5       ;                    ;
+; Top-level entity name                                              ; EXEX               ; EXEX               ;
+; Family name                                                        ; MAX II             ; Stratix            ;
+; Use smart compilation                                              ; Off                ; Off                ;
+; Restructure Multiplexers                                           ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                ; Off                ; Off                ;
+; Preserve fewer node names                                          ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                          ; Off                ; Off                ;
+; Verilog Version                                                    ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                       ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                           ; Auto               ; Auto               ;
+; Extract Verilog State Machines                                     ; On                 ; On                 ;
+; Extract VHDL State Machines                                        ; On                 ; On                 ;
+; Add Pass-Through Logic to Inferred RAMs                            ; On                 ; On                 ;
+; NOT Gate Push-Back                                                 ; On                 ; On                 ;
+; Power-Up Don't Care                                                ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                       ; Off                ; Off                ;
+; Remove Duplicate Registers                                         ; On                 ; On                 ;
+; Ignore CARRY Buffers                                               ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                             ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                              ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                          ; Off                ; Off                ;
+; Ignore LCELL Buffers                                               ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                     ; Off                ; Off                ;
+; Optimization Technique -- MAX II                                   ; Balanced           ; Balanced           ;
+; Carry Chain Length -- Stratix/Stratix GX/Cyclone/MAX II/Cyclone II ; 70                 ; 70                 ;
+; Auto Carry Chains                                                  ; On                 ; On                 ;
+; Auto Open-Drain Pins                                               ; On                 ; On                 ;
+; Remove Duplicate Logic                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                              ; Off                ; Off                ;
+; Perform gate-level register retiming                               ; Off                ; Off                ;
+; Allow register retiming to trade off Tsu/Tco with Fmax             ; On                 ; On                 ;
+; Auto Shift Register Replacement                                    ; On                 ; On                 ;
+; Auto Clock Enable Replacement                                      ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                  ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                             ; Off                ; Off                ;
+; Auto RAM Block Balancing                                           ; On                 ; On                 ;
+; Auto Resource Sharing                                              ; Off                ; Off                ;
+; Maximum Number of M512 Memory Blocks                               ; Unlimited          ; Unlimited          ;
+; Maximum Number of M4K Memory Blocks                                ; Unlimited          ; Unlimited          ;
+; Maximum Number of M-RAM Memory Blocks                              ; Unlimited          ; Unlimited          ;
+; Ignore translate_off and translate_on Synthesis Directives         ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                 ; Off                ; Off                ;
+; Retiming Meta-Stability Register Sequence Length                   ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                       ; Normal compilation ; Normal compilation ;
+; HDL message level                                                  ; Level2             ; Level2             ;
++--------------------------------------------------------------------+--------------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                            ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path            ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------+
+; EXEX.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fsszns/Desktop/EXEX/EXEX.bdf   ;
+; a7455.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fsszns/Desktop/EXEX/a7455.bdf  ;
+; a7411.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fsszns/Desktop/EXEX/a7411.bdf  ;
+; a7432.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fsszns/Desktop/EXEX/a7432.bdf  ;
+; a74240.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fsszns/Desktop/EXEX/a74240.bdf ;
+; a74273.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/fsszns/Desktop/EXEX/a74273.bdf ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------+
+
+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Total logic elements                        ; 18      ;
+;     -- Combinational with no register       ; 10      ;
+;     -- Register only                        ; 8       ;
+;     -- Combinational with a register        ; 0       ;
+;                                             ;         ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 6       ;
+;     -- 3 input functions                    ; 2       ;
+;     -- 2 input functions                    ; 2       ;
+;     -- 1 input functions                    ; 0       ;
+;     -- 0 input functions                    ; 0       ;
+;         -- Combinational cells for routing  ; 0       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 18      ;
+;     -- arithmetic mode                      ; 0       ;
+;     -- qfbk mode                            ; 0       ;
+;     -- register cascade mode                ; 0       ;
+;     -- synchronous clear/load mode          ; 0       ;
+;     -- asynchronous clear/load mode         ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 8       ;
+; I/O pins                                    ; 32      ;
+; Maximum fan-out node                        ; CLK_273 ;
+; Maximum fan-out                             ; 8       ;
+; Total fan-out                               ; 66      ;
+; Average fan-out                             ; 1.32    ;
++---------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                   ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+
+; |EXEX                      ; 18 (0)      ; 8            ; 0          ; 32   ; 0            ; 10 (0)       ; 8 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX               ;
+;    |a7411:inst26|          ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a7411:inst26  ;
+;    |a7411:inst27|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a7411:inst27  ;
+;    |a7411:inst29|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a7411:inst29  ;
+;    |a74240:inst33|         ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a74240:inst33 ;
+;    |a74273:inst35|         ; 8 (8)       ; 8            ; 0          ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a74273:inst35 ;
+;    |a7432:inst32|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a7432:inst32  ;
+;    |a7455:inst22|          ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a7455:inst22  ;
+;    |a7455:inst23|          ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |EXEX|a7455:inst23  ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 8     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 6.0 Build 178 04/27/2006 SJ Full Version
+    Info: Processing started: Tue Jul 07 14:39:48 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EXEX -c EXEX
+Info: Found 1 design units, including 1 entities, in source file EXEX.bdf
+    Info: Found entity 1: EXEX
+Info: Found 1 design units, including 1 entities, in source file a7455.bdf
+    Info: Found entity 1: a7455
+Info: Found 1 design units, including 1 entities, in source file a7411.bdf
+    Info: Found entity 1: a7411
+Info: Found 1 design units, including 1 entities, in source file a7432.bdf
+    Info: Found entity 1: a7432
+Info: Found 1 design units, including 1 entities, in source file a74240.bdf
+    Info: Found entity 1: a74240
+Info: Found 1 design units, including 1 entities, in source file a74273.bdf
+    Info: Found entity 1: a74273
+Info: Elaborating entity "EXEX" for the top level hierarchy
+Warning: Block or symbol "a7455" of instance "inst23" overlaps another block or symbol
+Warning: Pin "LDR1" is missing source
+Warning: Pin "R2BUSN" not connected
+Info: Elaborating entity "a74273" for hierarchy "a74273:inst35"
+Info: Elaborating entity "a7411" for hierarchy "a7411:inst27"
+Info: Elaborating entity "a7432" for hierarchy "a7432:inst32"
+Info: Elaborating entity "a74240" for hierarchy "a74240:inst33"
+Info: Elaborating entity "a7455" for hierarchy "a7455:inst22"
+Warning: Output pins are stuck at VCC or GND
+    Warning: Pin "LDR1" stuck at GND
+Warning: Design contains 2 input pin(s) that do not drive logic
+    Warning: No output dependent on input pin "LDR1N"
+    Warning: No output dependent on input pin "R2BUSN"
+Info: Implemented 50 device resources after synthesis - the final resource count might be different
+    Info: Implemented 15 input pins
+    Info: Implemented 17 output pins
+    Info: Implemented 18 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Processing ended: Tue Jul 07 14:39:48 2015
+    Info: Elapsed time: 00:00:00
+
+

@@ -1,0 +1,163 @@
+Version 6.0 Build 178 04/27/2006 SJ Full Version
+36
+1789
+OFF
+OFF
+OFF
+OFF
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+7411
+# storage
+db|exp4.(1).cnf
+db|exp4.(1).cnf
+# case_insensitive
+# source_file
+d:|altera|6.0|libraries|others|maxplus2|7411.bdf
+eb642e1f5cf6834b28e372c2358659ff
+24
+# end
+# entity
+74240
+# storage
+db|exp4.(2).cnf
+db|exp4.(2).cnf
+# case_insensitive
+# source_file
+d:|altera|6.0|libraries|others|maxplus2|74240.bdf
+7d548f9b49672a31fdbcabbc418ff55
+24
+# end
+# entity
+74138
+# storage
+db|exp4.(3).cnf
+db|exp4.(3).cnf
+# case_insensitive
+# source_file
+d:|altera|6.0|libraries|others|maxplus2|74138.bdf
+6cadbea2e3f85766eb8e4e262292077
+24
+# end
+# entity
+a7455
+# storage
+db|exp4.(4).cnf
+db|exp4.(4).cnf
+# case_insensitive
+# source_file
+a7455.bdf
+afa25e41511b2ff11fe96b20393f1052
+24
+# hierarchies {
+a7455:inst26
+a7455:inst28
+a7455:inst29
+a7455:inst30
+}
+# end
+# entity
+7410
+# storage
+db|exp4.(5).cnf
+db|exp4.(5).cnf
+# case_insensitive
+# source_file
+d:|altera|6.0|libraries|others|maxplus2|7410.bdf
+90746b33c9c14d385aa62d8ab2e80ee
+24
+# end
+# entity
+a7411
+# storage
+db|exp4.(6).cnf
+db|exp4.(6).cnf
+# case_insensitive
+# source_file
+a7411.bdf
+4d5f43f37380d850251b599eba77beda
+24
+# hierarchies {
+a7411:inst39
+a7411:inst37
+a7411:inst38
+}
+# end
+# entity
+a7410
+# storage
+db|exp4.(7).cnf
+db|exp4.(7).cnf
+# case_insensitive
+# source_file
+a7410.bdf
+e8eb87974eee637cb7f1191b4ea52c25
+24
+# hierarchies {
+a7410:inst40
+a7410:inst41
+a7410:inst42
+}
+# end
+# entity
+a74240
+# storage
+db|exp4.(8).cnf
+db|exp4.(8).cnf
+# case_insensitive
+# source_file
+a74240.bdf
+b77d27e33f6829bd1a3bb4029156113
+24
+# hierarchies {
+a74240:inst43
+a74240:inst44
+a74240:inst45
+}
+# end
+# entity
+a74138
+# storage
+db|exp4.(9).cnf
+db|exp4.(9).cnf
+# case_insensitive
+# source_file
+a74138.bdf
+c9655e313e56fde882678ace132ba6d
+24
+# hierarchies {
+a74138:inst
+a74138:inst49
+a74138:inst50
+a74138:inst51
+}
+# end
+# entity
+G1
+# storage
+db|exp4.(0).cnf
+db|exp4.(0).cnf
+# case_insensitive
+# source_file
+G1.bdf
+1c9686acde8953848cf98322821903b
+24
+# hierarchies {
+|
+}
+# end
+# complete
+

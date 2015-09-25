@@ -1,0 +1,115 @@
+Version 6.0 Build 178 04/27/2006 SJ Full Version
+36
+1789
+OFF
+OFF
+OFF
+OFF
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+a74273
+# storage
+db|EXEX.(1).cnf
+db|EXEX.(1).cnf
+# case_insensitive
+# source_file
+a74273.bdf
+d8db89bb7c0dececc63a4d7be8e7
+24
+# hierarchies {
+a74273:inst35
+}
+# end
+# entity
+a7455
+# storage
+db|EXEX.(2).cnf
+db|EXEX.(2).cnf
+# case_insensitive
+# source_file
+a7455.bdf
+afa25e41511b2ff11fe96b20393f1052
+24
+# hierarchies {
+a7455:inst22
+a7455:inst23
+a7455:inst24
+}
+# end
+# entity
+a7411
+# storage
+db|EXEX.(3).cnf
+db|EXEX.(3).cnf
+# case_insensitive
+# source_file
+a7411.bdf
+50b41a755c468e2f26d712f4e7b6494
+24
+# hierarchies {
+a7411:inst27
+a7411:inst29
+a7411:inst30
+a7411:inst26
+a7411:inst28
+}
+# end
+# entity
+a7432
+# storage
+db|EXEX.(4).cnf
+db|EXEX.(4).cnf
+# case_insensitive
+# source_file
+a7432.bdf
+d41c1c6fbb4479745c8229f853a9e
+24
+# hierarchies {
+a7432:inst32
+a7432:inst31
+}
+# end
+# entity
+a74240
+# storage
+db|EXEX.(5).cnf
+db|EXEX.(5).cnf
+# case_insensitive
+# source_file
+a74240.bdf
+fe123fb830ee428cfffd2572af875b93
+24
+# hierarchies {
+a74240:inst33
+a74240:inst34
+}
+# end
+# entity
+EXEX
+# storage
+db|EXEX.(0).cnf
+db|EXEX.(0).cnf
+# case_insensitive
+# source_file
+EXEX.bdf
+edca9f9fb0f619cad9c373db7614b27c
+24
+# hierarchies {
+|
+}
+# end
+# complete
+

@@ -1,0 +1,114 @@
+# Copyright (C) 1991-2006 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		exp4_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM240T100C5
+set_global_assignment -name TOP_LEVEL_ENTITY G1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 6.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:19:12  JUNE 17, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION 6.0
+set_location_assignment PIN_55 -to CLK_273
+set_location_assignment PIN_50 -to CLR
+set_location_assignment PIN_37 -to CN
+set_location_assignment PIN_33 -to CY
+set_location_assignment PIN_69 -to IR0
+set_location_assignment PIN_68 -to IR1
+set_location_assignment PIN_67 -to IR2
+set_location_assignment PIN_66 -to IR3
+set_location_assignment PIN_62 -to IR4
+set_location_assignment PIN_61 -to IR5
+set_location_assignment PIN_58 -to IR6
+set_location_assignment PIN_57 -to IR7
+set_location_assignment PIN_1 -to U6_3
+set_location_assignment PIN_2 -to MAR3
+set_location_assignment PIN_3 -to MAR2
+set_location_assignment PIN_4 -to MAR1
+set_location_assignment PIN_5 -to MAR0
+set_location_assignment PIN_6 -to MAR4
+set_location_assignment PIN_7 -to MAR5
+set_location_assignment PIN_8 -to MAR6
+set_location_assignment PIN_15 -to U6_45
+set_location_assignment PIN_16 -to P12
+set_location_assignment PIN_17 -to P11
+set_location_assignment PIN_18 -to P10
+set_location_assignment PIN_19 -to P9
+set_location_assignment PIN_20 -to P7
+set_location_assignment PIN_21 -to P6
+set_location_assignment PIN_26 -to P5
+set_location_assignment PIN_27 -to P4
+set_location_assignment PIN_29 -to P2
+set_location_assignment PIN_28 -to P3
+set_location_assignment PIN_30 -to P1
+set_location_assignment PIN_35 -to LDDR1
+set_location_assignment PIN_36 -to LDDR2
+set_location_assignment PIN_38 -to LDIRN
+set_location_assignment PIN_39 -to LDPC
+set_location_assignment PIN_43 -to P7N
+set_location_assignment PIN_47 -to T4
+set_location_assignment PIN_48 -to T3
+set_location_assignment PIN_49 -to RIL
+set_location_assignment PIN_51 -to LDR3N
+set_location_assignment PIN_52 -to LDR1N
+set_location_assignment PIN_71 -to TX_7
+set_location_assignment PIN_72 -to TX7
+set_location_assignment PIN_73 -to TX_6
+set_location_assignment PIN_74 -to TX6
+set_location_assignment PIN_75 -to TX2
+set_location_assignment PIN_76 -to TX1
+set_location_assignment PIN_77 -to TX3
+set_location_assignment PIN_78 -to TX5
+set_location_assignment PIN_82 -to TX4
+set_location_assignment PIN_81 -to TX_5
+set_location_assignment PIN_83 -to TX_4
+set_location_assignment PIN_84 -to MIR0
+set_location_assignment PIN_85 -to MIR1
+set_location_assignment PIN_86 -to MIR6
+set_location_assignment PIN_87 -to MIR5
+set_location_assignment PIN_88 -to MIR2
+set_location_assignment PIN_89 -to MIR4
+set_location_assignment PIN_90 -to MIR3
+set_location_assignment PIN_91 -to U4_2
+set_location_assignment PIN_95 -to U4_1
+set_location_assignment PIN_96 -to U5_3
+set_location_assignment PIN_97 -to U5_1
+set_location_assignment PIN_98 -to U5_2
+set_location_assignment PIN_99 -to U6_1
+set_location_assignment PIN_100 -to U6_2
+set_global_assignment -name BDF_FILE G1.bdf
+set_global_assignment -name BDF_FILE ../EXEX/EXEX.bdf
+set_global_assignment -name BDF_FILE a7455.bdf
+set_global_assignment -name BDF_FILE a7411.bdf
+set_global_assignment -name BDF_FILE a7410.bdf
+set_global_assignment -name BDF_FILE a74240.bdf
+set_global_assignment -name BDF_FILE a74138.bdf
+set_location_assignment PIN_40 -to SWBUS
+set_location_assignment PIN_56 -to RSBUS
+set_location_assignment PIN_54 -to RDBUS
+set_location_assignment PIN_53 -to R2BUSN
+set_location_assignment PIN_42 -to PCBUS
+set_location_assignment PIN_34 -to a0F
+set_location_assignment PIN_41 -to ALUBUS
+set_global_assignment -name VECTOR_WAVEFORM_FILE exp4.vwf
+set_global_assignment -name VHDL_FILE G1.vhd

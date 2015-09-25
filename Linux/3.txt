@@ -1,0 +1,52 @@
+#!/bin/sh
+echo "please choose wheather you want to know the file or the text"
+read x
+case $x in
+1)
+##find file
+##输出提示，让用户选择是查找文件文件所在目录，还是查找关键字所在文件，1是找文件，0是找文本
+echo "please enter what you want to look for"
+read a
+while test -z $a
+do
+echo "enter again："
+read a
+done
+
+echo "please enter the path"
+read path
+while test -z $path
+do
+echo "enter again："
+read path
+cd $path
+done
+
+find $a
+##判断输入是否有效，然后根据给出路径寻找文件是否存在
+;;
+
+0)
+echo "please enter what you want to look for"
+read a
+while test -z $a
+do
+echo "enter again："
+read a
+done
+
+echo "please enter the path"
+read path
+while test -z $path
+do
+echo "enter again："
+read path
+cd $path
+done
+##echo "enter the file name"
+##read filename
+##cat $filename|grep $a
+grep $a *
+;;
+##判断查找输入是否有效，然后再根据所给目录索引每一个文件内容。
+esac 

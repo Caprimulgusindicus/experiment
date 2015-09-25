@@ -1,0 +1,487 @@
+|TOP
+de[0] <= cnt_n6:inst4.q[0]
+de[1] <= cnt_n6:inst4.q[1]
+de[2] <= cnt_n6:inst4.q[2]
+f10m => m10-7:inst.CLK1
+LED[7] <= seg_dec:inst2.seg[7]
+LED[6] <= seg_dec:inst2.seg[6]
+LED[5] <= seg_dec:inst2.seg[5]
+LED[4] <= seg_dec:inst2.seg[4]
+LED[3] <= seg_dec:inst2.seg[3]
+LED[2] <= seg_dec:inst2.seg[2]
+LED[1] <= seg_dec:inst2.seg[1]
+clr => cnt_n16x6:inst1.clr
+ud => cnt_n16x6:inst1.ud
+
+
+|TOP|cnt_n6:inst4
+clk => qq[0].CLK
+clk => qq[1].CLK
+clk => qq[2].CLK
+cs[5] <= cs[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cs[4] <= cs[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cs[3] <= cs[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cs[2] <= cs[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cs[1] <= cs[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+cs[0] <= cs[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= qq[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= qq[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= qq[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|m10-7:inst
+C0 <= CNT_M10:inst.CO
+CLK1 => CNT_M10:inst7.CLK
+CLK1 => CNT_M10:inst6.CLK
+CLK1 => CNT_M10:inst5.CLK
+CLK1 => CNT_M10:inst4.CLK
+CLK1 => CNT_M10:inst2.CLK
+CLK1 => CNT_M10:inst1.CLK
+CLK1 => CNT_M10:inst.CLK
+F1[0] <= CNT_M10:inst7.Q[0]
+F2[0] <= CNT_M10:inst6.Q[0]
+F3[0] <= CNT_M10:inst5.Q[0]
+F4[0] <= CNT_M10:inst4.Q[0]
+F5[0] <= CNT_M10:inst2.Q[0]
+F6[0] <= CNT_M10:inst1.Q[0]
+F7[0] <= CNT_M10:inst.Q[0]
+
+
+|TOP|m10-7:inst|CNT_M10:inst
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|m10-7:inst|CNT_M10:inst1
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|m10-7:inst|CNT_M10:inst2
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|m10-7:inst|CNT_M10:inst4
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|m10-7:inst|CNT_M10:inst5
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|m10-7:inst|CNT_M10:inst6
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|m10-7:inst|CNT_M10:inst7
+CO <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+CI => inst1~0.IN0
+CI => inst.IN0
+CI => inst9.IN1
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst8.CLK
+
+
+|TOP|seg_dec:inst2
+din[0] => Mux0.IN19
+din[0] => Mux1.IN19
+din[0] => Mux2.IN19
+din[0] => Mux3.IN19
+din[0] => Mux4.IN19
+din[0] => Mux5.IN19
+din[0] => Mux6.IN19
+din[1] => Mux0.IN18
+din[1] => Mux1.IN18
+din[1] => Mux2.IN18
+din[1] => Mux3.IN18
+din[1] => Mux4.IN18
+din[1] => Mux5.IN18
+din[1] => Mux6.IN18
+din[2] => Mux0.IN17
+din[2] => Mux1.IN17
+din[2] => Mux2.IN17
+din[2] => Mux3.IN17
+din[2] => Mux4.IN17
+din[2] => Mux5.IN17
+din[2] => Mux6.IN17
+din[3] => Mux0.IN16
+din[3] => Mux1.IN16
+din[3] => Mux2.IN16
+din[3] => Mux3.IN16
+din[3] => Mux4.IN16
+din[3] => Mux5.IN16
+din[3] => Mux6.IN16
+seg[7] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|mux_6x1:inst6
+d0[0] => Mux0.IN2
+d0[1] => Mux1.IN2
+d0[2] => Mux2.IN2
+d0[3] => Mux3.IN2
+d1[0] => Mux0.IN3
+d1[1] => Mux1.IN3
+d1[2] => Mux2.IN3
+d1[3] => Mux3.IN3
+d2[0] => Mux0.IN4
+d2[1] => Mux1.IN4
+d2[2] => Mux2.IN4
+d2[3] => Mux3.IN4
+d3[0] => Mux0.IN5
+d3[1] => Mux1.IN5
+d3[2] => Mux2.IN5
+d3[3] => Mux3.IN5
+d4[0] => Mux0.IN6
+d4[1] => Mux1.IN6
+d4[2] => Mux2.IN6
+d4[3] => Mux3.IN6
+d5[0] => Mux0.IN7
+d5[1] => Mux1.IN7
+d5[2] => Mux2.IN7
+d5[3] => Mux3.IN7
+dout[0] <= dout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => Mux0.IN10
+sel[0] => Mux1.IN10
+sel[0] => Mux2.IN10
+sel[0] => Mux3.IN10
+sel[0] => Mux4.IN10
+sel[1] => Mux0.IN9
+sel[1] => Mux1.IN9
+sel[1] => Mux2.IN9
+sel[1] => Mux3.IN9
+sel[1] => Mux4.IN9
+sel[2] => Mux0.IN8
+sel[2] => Mux1.IN8
+sel[2] => Mux2.IN8
+sel[2] => Mux3.IN8
+sel[2] => Mux4.IN8
+
+
+|TOP|cnt_n16x6:inst1
+q0[0] <= cnt_n16:inst.q[0]
+q0[1] <= cnt_n16:inst.q[1]
+q0[2] <= cnt_n16:inst.q[2]
+q0[3] <= cnt_n16:inst.q[3]
+clk => cnt_n16:inst.clk
+clk => cnt_n16:inst4.clk
+clk => cnt_n16:inst3.clk
+clk => cnt_n16:inst5.clk
+clk => cnt_n16:inst6.clk
+clk => cnt_n16:inst7.clk
+clr => cnt_n16:inst.clr
+clr => cnt_n16:inst4.clr
+clr => cnt_n16:inst3.clr
+clr => cnt_n16:inst5.clr
+clr => cnt_n16:inst6.clr
+clr => cnt_n16:inst7.clr
+ud => cnt_n16:inst.updown
+ud => cnt_n16:inst4.updown
+ud => cnt_n16:inst3.updown
+ud => cnt_n16:inst5.updown
+ud => cnt_n16:inst6.updown
+ud => cnt_n16:inst7.updown
+q1[0] <= cnt_n16:inst4.q[0]
+q1[1] <= cnt_n16:inst4.q[1]
+q1[2] <= cnt_n16:inst4.q[2]
+q1[3] <= cnt_n16:inst4.q[3]
+q2[0] <= cnt_n16:inst3.q[0]
+q2[1] <= cnt_n16:inst3.q[1]
+q2[2] <= cnt_n16:inst3.q[2]
+q2[3] <= cnt_n16:inst3.q[3]
+q3[0] <= cnt_n16:inst5.q[0]
+q3[1] <= cnt_n16:inst5.q[1]
+q3[2] <= cnt_n16:inst5.q[2]
+q3[3] <= cnt_n16:inst5.q[3]
+q4[0] <= cnt_n16:inst6.q[0]
+q4[1] <= cnt_n16:inst6.q[1]
+q4[2] <= cnt_n16:inst6.q[2]
+q4[3] <= cnt_n16:inst6.q[3]
+q5[0] <= cnt_n16:inst7.q[0]
+q5[1] <= cnt_n16:inst7.q[1]
+q5[2] <= cnt_n16:inst7.q[2]
+q5[3] <= cnt_n16:inst7.q[3]
+
+
+|TOP|cnt_n16x6:inst1|cnt_n16:inst
+CLK => QQ[0].CLK
+CLK => QQ[1].CLK
+CLK => QQ[2].CLK
+CLK => QQ[3].CLK
+CI => QQ~4.OUTPUTSELECT
+CI => QQ~5.OUTPUTSELECT
+CI => QQ~6.OUTPUTSELECT
+CI => QQ~7.OUTPUTSELECT
+CI => CO~1.OUTPUTSELECT
+CLR => QQ~12.OUTPUTSELECT
+CLR => QQ~13.OUTPUTSELECT
+CLR => QQ~14.OUTPUTSELECT
+CLR => QQ~15.OUTPUTSELECT
+LOAD => QQ~8.OUTPUTSELECT
+LOAD => QQ~9.OUTPUTSELECT
+LOAD => QQ~10.OUTPUTSELECT
+LOAD => QQ~11.OUTPUTSELECT
+UPDOWN => QQ~0.OUTPUTSELECT
+UPDOWN => QQ~1.OUTPUTSELECT
+UPDOWN => QQ~2.OUTPUTSELECT
+UPDOWN => QQ~3.OUTPUTSELECT
+UPDOWN => CO~0.OUTPUTSELECT
+DIN[0] => QQ~11.DATAB
+DIN[1] => QQ~10.DATAB
+DIN[2] => QQ~9.DATAB
+DIN[3] => QQ~8.DATAB
+CO <= CO~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= QQ~15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= QQ~14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= QQ~13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= QQ~12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|cnt_n16x6:inst1|cnt_n16:inst4
+CLK => QQ[0].CLK
+CLK => QQ[1].CLK
+CLK => QQ[2].CLK
+CLK => QQ[3].CLK
+CI => QQ~4.OUTPUTSELECT
+CI => QQ~5.OUTPUTSELECT
+CI => QQ~6.OUTPUTSELECT
+CI => QQ~7.OUTPUTSELECT
+CI => CO~1.OUTPUTSELECT
+CLR => QQ~12.OUTPUTSELECT
+CLR => QQ~13.OUTPUTSELECT
+CLR => QQ~14.OUTPUTSELECT
+CLR => QQ~15.OUTPUTSELECT
+LOAD => QQ~8.OUTPUTSELECT
+LOAD => QQ~9.OUTPUTSELECT
+LOAD => QQ~10.OUTPUTSELECT
+LOAD => QQ~11.OUTPUTSELECT
+UPDOWN => QQ~0.OUTPUTSELECT
+UPDOWN => QQ~1.OUTPUTSELECT
+UPDOWN => QQ~2.OUTPUTSELECT
+UPDOWN => QQ~3.OUTPUTSELECT
+UPDOWN => CO~0.OUTPUTSELECT
+DIN[0] => QQ~11.DATAB
+DIN[1] => QQ~10.DATAB
+DIN[2] => QQ~9.DATAB
+DIN[3] => QQ~8.DATAB
+CO <= CO~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= QQ~15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= QQ~14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= QQ~13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= QQ~12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|cnt_n16x6:inst1|cnt_n16:inst3
+CLK => QQ[0].CLK
+CLK => QQ[1].CLK
+CLK => QQ[2].CLK
+CLK => QQ[3].CLK
+CI => QQ~4.OUTPUTSELECT
+CI => QQ~5.OUTPUTSELECT
+CI => QQ~6.OUTPUTSELECT
+CI => QQ~7.OUTPUTSELECT
+CI => CO~1.OUTPUTSELECT
+CLR => QQ~12.OUTPUTSELECT
+CLR => QQ~13.OUTPUTSELECT
+CLR => QQ~14.OUTPUTSELECT
+CLR => QQ~15.OUTPUTSELECT
+LOAD => QQ~8.OUTPUTSELECT
+LOAD => QQ~9.OUTPUTSELECT
+LOAD => QQ~10.OUTPUTSELECT
+LOAD => QQ~11.OUTPUTSELECT
+UPDOWN => QQ~0.OUTPUTSELECT
+UPDOWN => QQ~1.OUTPUTSELECT
+UPDOWN => QQ~2.OUTPUTSELECT
+UPDOWN => QQ~3.OUTPUTSELECT
+UPDOWN => CO~0.OUTPUTSELECT
+DIN[0] => QQ~11.DATAB
+DIN[1] => QQ~10.DATAB
+DIN[2] => QQ~9.DATAB
+DIN[3] => QQ~8.DATAB
+CO <= CO~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= QQ~15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= QQ~14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= QQ~13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= QQ~12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|cnt_n16x6:inst1|cnt_n16:inst5
+CLK => QQ[0].CLK
+CLK => QQ[1].CLK
+CLK => QQ[2].CLK
+CLK => QQ[3].CLK
+CI => QQ~4.OUTPUTSELECT
+CI => QQ~5.OUTPUTSELECT
+CI => QQ~6.OUTPUTSELECT
+CI => QQ~7.OUTPUTSELECT
+CI => CO~1.OUTPUTSELECT
+CLR => QQ~12.OUTPUTSELECT
+CLR => QQ~13.OUTPUTSELECT
+CLR => QQ~14.OUTPUTSELECT
+CLR => QQ~15.OUTPUTSELECT
+LOAD => QQ~8.OUTPUTSELECT
+LOAD => QQ~9.OUTPUTSELECT
+LOAD => QQ~10.OUTPUTSELECT
+LOAD => QQ~11.OUTPUTSELECT
+UPDOWN => QQ~0.OUTPUTSELECT
+UPDOWN => QQ~1.OUTPUTSELECT
+UPDOWN => QQ~2.OUTPUTSELECT
+UPDOWN => QQ~3.OUTPUTSELECT
+UPDOWN => CO~0.OUTPUTSELECT
+DIN[0] => QQ~11.DATAB
+DIN[1] => QQ~10.DATAB
+DIN[2] => QQ~9.DATAB
+DIN[3] => QQ~8.DATAB
+CO <= CO~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= QQ~15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= QQ~14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= QQ~13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= QQ~12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|cnt_n16x6:inst1|cnt_n16:inst6
+CLK => QQ[0].CLK
+CLK => QQ[1].CLK
+CLK => QQ[2].CLK
+CLK => QQ[3].CLK
+CI => QQ~4.OUTPUTSELECT
+CI => QQ~5.OUTPUTSELECT
+CI => QQ~6.OUTPUTSELECT
+CI => QQ~7.OUTPUTSELECT
+CI => CO~1.OUTPUTSELECT
+CLR => QQ~12.OUTPUTSELECT
+CLR => QQ~13.OUTPUTSELECT
+CLR => QQ~14.OUTPUTSELECT
+CLR => QQ~15.OUTPUTSELECT
+LOAD => QQ~8.OUTPUTSELECT
+LOAD => QQ~9.OUTPUTSELECT
+LOAD => QQ~10.OUTPUTSELECT
+LOAD => QQ~11.OUTPUTSELECT
+UPDOWN => QQ~0.OUTPUTSELECT
+UPDOWN => QQ~1.OUTPUTSELECT
+UPDOWN => QQ~2.OUTPUTSELECT
+UPDOWN => QQ~3.OUTPUTSELECT
+UPDOWN => CO~0.OUTPUTSELECT
+DIN[0] => QQ~11.DATAB
+DIN[1] => QQ~10.DATAB
+DIN[2] => QQ~9.DATAB
+DIN[3] => QQ~8.DATAB
+CO <= CO~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= QQ~15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= QQ~14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= QQ~13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= QQ~12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TOP|cnt_n16x6:inst1|cnt_n16:inst7
+CLK => QQ[0].CLK
+CLK => QQ[1].CLK
+CLK => QQ[2].CLK
+CLK => QQ[3].CLK
+CI => QQ~4.OUTPUTSELECT
+CI => QQ~5.OUTPUTSELECT
+CI => QQ~6.OUTPUTSELECT
+CI => QQ~7.OUTPUTSELECT
+CI => CO~1.OUTPUTSELECT
+CLR => QQ~12.OUTPUTSELECT
+CLR => QQ~13.OUTPUTSELECT
+CLR => QQ~14.OUTPUTSELECT
+CLR => QQ~15.OUTPUTSELECT
+LOAD => QQ~8.OUTPUTSELECT
+LOAD => QQ~9.OUTPUTSELECT
+LOAD => QQ~10.OUTPUTSELECT
+LOAD => QQ~11.OUTPUTSELECT
+UPDOWN => QQ~0.OUTPUTSELECT
+UPDOWN => QQ~1.OUTPUTSELECT
+UPDOWN => QQ~2.OUTPUTSELECT
+UPDOWN => QQ~3.OUTPUTSELECT
+UPDOWN => CO~0.OUTPUTSELECT
+DIN[0] => QQ~11.DATAB
+DIN[1] => QQ~10.DATAB
+DIN[2] => QQ~9.DATAB
+DIN[3] => QQ~8.DATAB
+CO <= CO~1.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] <= QQ~15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= QQ~14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= QQ~13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= QQ~12.DB_MAX_OUTPUT_PORT_TYPE
+
+

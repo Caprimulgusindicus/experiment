@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.365 ns
+From           : ud
+To             : cnt_n16x6:inst1|cnt_n16:inst6|QQ[3]
+From Clock     : --
+To Clock       : f10m
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.091 ns
+From           : mux_6x1:inst6|dout[3]
+To             : LED[5]
+From Clock     : f10m
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.075 ns
+From           : clr
+To             : mux_6x1:inst6|dout[2]
+From Clock     : --
+To Clock       : f10m
+Failed Paths   : 0
+
+Type           : Clock Setup: 'f10m'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 255.30 MHz ( period = 3.917 ns )
+From           : m10-7:inst|CNT_M10:inst5|inst1
+To             : m10-7:inst|CNT_M10:inst|inst1
+From Clock     : f10m
+To Clock       : f10m
+Failed Paths   : 0
+
+Type           : Clock Hold: 'f10m'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : cnt_n16x6:inst1|cnt_n16:inst7|QQ[3]
+To             : mux_6x1:inst6|dout[3]
+From Clock     : f10m
+To Clock       : f10m
+Failed Paths   : 36
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 36
+
+--------------------------------------------------------------------------------------
+

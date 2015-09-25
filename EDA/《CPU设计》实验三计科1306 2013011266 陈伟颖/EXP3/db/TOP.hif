@@ -1,0 +1,178 @@
+Version 6.0 Build 178 04/27/2006 SJ Full Version
+39
+2097
+OFF
+OFF
+OFF
+OFF
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+TOP
+# storage
+db|TOP.(0).cnf
+db|TOP.(0).cnf
+# case_insensitive
+# source_file
+TOP.bdf
+15daa91b3962656d151d90c5be16464
+24
+# hierarchies {
+|
+}
+# end
+# entity
+cnt_n6
+# storage
+db|TOP.(1).cnf
+db|TOP.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cnt_n6.vhd
+e2e3b5aa01bbfe471e691bbcd9ac7
+4
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+cnt_n6:inst4
+}
+# end
+# entity
+m10-7
+# storage
+db|TOP.(2).cnf
+db|TOP.(2).cnf
+# case_insensitive
+# source_file
+m10-7.bdf
+49fe5e65698e28fffc21118e613db348
+24
+# hierarchies {
+m10-7:inst
+}
+# end
+# entity
+CNT_M10
+# storage
+db|TOP.(3).cnf
+db|TOP.(3).cnf
+# case_insensitive
+# source_file
+CNT_M10.bdf
+c521a0945c4ecf12a33615f8ecb18f1c
+24
+# hierarchies {
+m10-7:inst|CNT_M10:inst
+m10-7:inst|CNT_M10:inst1
+m10-7:inst|CNT_M10:inst2
+m10-7:inst|CNT_M10:inst4
+m10-7:inst|CNT_M10:inst5
+m10-7:inst|CNT_M10:inst6
+m10-7:inst|CNT_M10:inst7
+}
+# end
+# entity
+seg_dec
+# storage
+db|TOP.(4).cnf
+db|TOP.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+seg_dec.vhd
+6ea2b76e973f58342cce1a86585fc52
+4
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+seg_dec:inst2
+}
+# end
+# entity
+mux_6x1
+# storage
+db|TOP.(5).cnf
+db|TOP.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_6x1.vhd
+dfb764aa9dcb4f59f74139ed597888b
+4
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+mux_6x1:inst6
+}
+# end
+# entity
+cnt_n16x6
+# storage
+db|TOP.(6).cnf
+db|TOP.(6).cnf
+# case_insensitive
+# source_file
+cnt_n16x6.bdf
+d47d02ff9256be5e6bb06f1eeb88cc
+24
+# hierarchies {
+cnt_n16x6:inst1
+}
+# end
+# entity
+cnt_n16
+# storage
+db|TOP.(7).cnf
+db|TOP.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cnt_n16.vhd
+eee6b162dacca36ff173dec77c53022
+4
+# internal_option {
+AUTO_RESOURCE_SHARING
+OFF
+}
+# hierarchies {
+cnt_n16x6:inst1|cnt_n16:inst
+cnt_n16x6:inst1|cnt_n16:inst4
+cnt_n16x6:inst1|cnt_n16:inst3
+cnt_n16x6:inst1|cnt_n16:inst5
+cnt_n16x6:inst1|cnt_n16:inst6
+cnt_n16x6:inst1|cnt_n16:inst7
+}
+# end
+# complete
+

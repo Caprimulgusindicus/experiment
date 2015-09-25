@@ -1,0 +1,178 @@
+|EXEX
+IR7 <= a74273:inst35.Q8
+BUS0 => a74273:inst35.D1
+BUS1 => a74273:inst35.D2
+BUS2 => a74273:inst35.D3
+BUS3 => a74273:inst35.D4
+BUS4 => a74273:inst35.D5
+BUS5 => a74273:inst35.D6
+BUS6 => a74273:inst35.D7
+BUS7 => a74273:inst35.D8
+CLK_273 => a74273:inst35.CLK
+IR6 <= a74273:inst35.Q7
+IR5 <= a74273:inst35.Q6
+IR4 <= a74273:inst35.Q5
+IR3 <= a74273:inst35.Q4
+IR2 <= a74273:inst35.Q3
+IR1 <= a74273:inst35.Q2
+IR0 <= a74273:inst35.Q1
+LDR0 <= a7411:inst27.a
+LDRi => a7411:inst27.d
+LDRi => a7411:inst29.d
+LDRi => a7411:inst30.d
+LDRi => a7411:inst28.d
+LDR1 <= <GND>
+LDR2 <= a7411:inst29.a
+LDR3 <= a7432:inst32.a
+LDR3N => a7432:inst32.c
+TEST1 <= a74240:inst33.a
+TEST2 <= a74240:inst34.a
+R0BUS <= a7455:inst22.YN
+RSBUS => a7455:inst22.A
+RSBUS => a7455:inst23.A
+RSBUS => a7455:inst24.A
+RDBUS => a7455:inst22.G
+RDBUS => a7455:inst22.H
+RDBUS => a7455:inst23.E
+RDBUS => a7455:inst23.F
+RDBUS => a7455:inst24.E
+R1BUS <= a7455:inst23.YN
+R2BUS <= a7411:inst26.a
+LDR1N => a7432:inst31.b
+R2BUSN => ~NO_FANOUT~
+
+
+|EXEX|a74273:inst35
+Q1 <= 19.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 19.ACLR
+CLRN => 18.ACLR
+CLRN => 17.ACLR
+CLRN => 16.ACLR
+CLRN => 15.ACLR
+CLRN => 14.ACLR
+CLRN => 13.ACLR
+CLRN => 12.ACLR
+CLK => 19.CLK
+CLK => 18.CLK
+CLK => 17.CLK
+CLK => 16.CLK
+CLK => 15.CLK
+CLK => 14.CLK
+CLK => 13.CLK
+CLK => 12.CLK
+D1 => 19.DATAIN
+Q2 <= 18.DB_MAX_OUTPUT_PORT_TYPE
+D2 => 18.DATAIN
+Q3 <= 17.DB_MAX_OUTPUT_PORT_TYPE
+D3 => 17.DATAIN
+Q4 <= 16.DB_MAX_OUTPUT_PORT_TYPE
+D4 => 16.DATAIN
+Q5 <= 15.DB_MAX_OUTPUT_PORT_TYPE
+D5 => 15.DATAIN
+Q6 <= 14.DB_MAX_OUTPUT_PORT_TYPE
+D6 => 14.DATAIN
+Q7 <= 13.DB_MAX_OUTPUT_PORT_TYPE
+D7 => 13.DATAIN
+Q8 <= 12.DB_MAX_OUTPUT_PORT_TYPE
+D8 => 12.DATAIN
+
+
+|EXEX|a7411:inst27
+a <= 5.DB_MAX_OUTPUT_PORT_TYPE
+d => 5.IN0
+c => 5.IN1
+b => 5.IN2
+
+
+|EXEX|a7411:inst29
+a <= 5.DB_MAX_OUTPUT_PORT_TYPE
+d => 5.IN0
+c => 5.IN1
+b => 5.IN2
+
+
+|EXEX|a7432:inst32
+a <= 4.DB_MAX_OUTPUT_PORT_TYPE
+b => 4.IN0
+c => 4.IN1
+
+
+|EXEX|a7411:inst30
+a <= 5.DB_MAX_OUTPUT_PORT_TYPE
+d => 5.IN0
+c => 5.IN1
+b => 5.IN2
+
+
+|EXEX|a74240:inst33
+a <= 6.DB_MAX_OUTPUT_PORT_TYPE
+b => 6.IN0
+c => 6.IN1
+d => 6.IN2
+e => 6.IN3
+
+
+|EXEX|a74240:inst34
+a <= 6.DB_MAX_OUTPUT_PORT_TYPE
+b => 6.IN0
+c => 6.IN1
+d => 6.IN2
+e => 6.IN3
+
+
+|EXEX|a7455:inst22
+YN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+A => 2.IN0
+B => 2.IN1
+C => 2.IN2
+D => 2.IN3
+E => 4.IN0
+F => 4.IN1
+G => 4.IN2
+H => 4.IN3
+
+
+|EXEX|a7455:inst23
+YN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+A => 2.IN0
+B => 2.IN1
+C => 2.IN2
+D => 2.IN3
+E => 4.IN0
+F => 4.IN1
+G => 4.IN2
+H => 4.IN3
+
+
+|EXEX|a7411:inst26
+a <= 5.DB_MAX_OUTPUT_PORT_TYPE
+d => 5.IN0
+c => 5.IN1
+b => 5.IN2
+
+
+|EXEX|a7455:inst24
+YN <= 3.DB_MAX_OUTPUT_PORT_TYPE
+A => 2.IN0
+B => 2.IN1
+C => 2.IN2
+D => 2.IN3
+E => 4.IN0
+F => 4.IN1
+G => 4.IN2
+H => 4.IN3
+
+
+|EXEX|a7411:inst28
+a <= 5.DB_MAX_OUTPUT_PORT_TYPE
+d => 5.IN0
+c => 5.IN1
+b => 5.IN2
+
+
+|EXEX|a7432:inst31
+a <= 4.DB_MAX_OUTPUT_PORT_TYPE
+b => 4.IN0
+c => 4.IN1
+
+

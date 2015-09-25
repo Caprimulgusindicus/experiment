@@ -1,0 +1,171 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.3"))
+(pin
+	(input)
+	(rect 80 160 248 176)
+	(text "INPUT" (rect 133 -1 161 9)(font "Arial" (font_size 6)))
+	(text "b" (rect 5 1 12 15)(font "Arial" (font_size 8)))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 80 176 248 192)
+	(text "INPUT" (rect 133 -1 161 9)(font "Arial" (font_size 6)))
+	(text "c" (rect 5 1 12 15)(font "Arial" (font_size 8)))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 80 192 248 208)
+	(text "INPUT" (rect 133 -1 161 9)(font "Arial" (font_size 6)))
+	(text "d" (rect 5 1 12 15)(font "Arial" (font_size 8)))
+	(pt 168 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12)(line_width 1))
+		(line (pt 92 4)(pt 117 4)(line_width 1))
+		(line (pt 121 8)(pt 168 8)(line_width 1))
+		(line (pt 92 12)(pt 92 4)(line_width 1))
+		(line (pt 117 4)(pt 121 8)(line_width 1))
+		(line (pt 117 12)(pt 121 8)(line_width 1))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 384 176 560 192)
+	(text "OUTPUT" (rect 1 -1 39 9)(font "Arial" (font_size 6)))
+	(text "a" (rect 90 0 97 14)(font "Arial" (font_size 8)))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(symbol
+	(rect 296 160 360 200)
+	(text "NAND3" (rect 1 -1 32 9)(font "Arial" (font_size 6)))
+	(text "5" (rect 1 30 5 40)(font "Arial" (font_size 6)))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN3" (rect 7 24 24 36)(font "Courier New" (bold))(invisible))
+		(text "IN3" (rect 7 24 24 36)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "IN2" (rect 7 16 24 28)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 7 16 24 28)(font "Courier New" (bold))(invisible))
+		(line (pt 0 24)(pt 16 24)(line_width 1))
+	)
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 7 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 7 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 16 16)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 54 15 71 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 54 15 71 27)(font "Courier New" (bold))(invisible))
+		(line (pt 52 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 16 36)(pt 32 36)(line_width 1))
+		(line (pt 16 12)(pt 32 12)(line_width 1))
+		(line (pt 16 36)(pt 16 12)(line_width 1))
+		(arc (pt 32 36)(pt 32 12)(rect 20 12 45 37)(line_width 1))
+		(circle (rect 44 20 52 28)(line_width 1))
+	)
+)
+(connector
+	(pt 360 184)
+	(pt 384 184)
+)
+(connector
+	(pt 248 200)
+	(pt 264 200)
+)
+(connector
+	(pt 248 168)
+	(pt 264 168)
+)
+(connector
+	(pt 248 184)
+	(pt 296 184)
+)
+(connector
+	(pt 264 192)
+	(pt 296 192)
+)
+(connector
+	(pt 264 176)
+	(pt 296 176)
+)
+(connector
+	(pt 264 200)
+	(pt 264 192)
+)
+(connector
+	(pt 264 176)
+	(pt 264 168)
+)
+(text "7410" (rect 305 36 342 52)(font "Courier New" (font_size 10)(bold)))
+(title_block
+	(rect 240 344 608 464)
+	(section (rect 0 0 368 24)(text "TITLE" (rect 2 0 30 12)(font "Arial" ))(text "MacroFunction" (rect 56 2 177 20)(font "Arial" (font_size 12)))(border))
+	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 12)(font "Arial" ))(text "ALTERA CORPORATION" (rect 56 2 269 20)(font "Arial" (font_size 12)))(border))
+	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 59 12)(font "Arial" ))(text "fsszns" (rect 56 2 106 20)(font "Arial" (font_size 12)))(name)(border))
+	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 49 12)(font "Arial" ))(text "1.00" (rect 56 1 85 17)(font "Arial" (font_size 10)))(border))
+	(section (rect 280 72 368 96)(text "REV" (rect 2 1 24 13)(font "Arial" ))(text "A" (rect 43 1 53 17)(font "Arial" (font_size 10)))(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Tue Jul 07 13:20:08 2015" (rect 56 3 227 19)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 240 96 310 120)(text "SHEET" (rect 2 0 37 12)(font "Arial" ))(text "1" (rect 55 5 63 21)(font "Arial" (font_size 10))))
+	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 12)(font "Arial" ))(text "1" (rect 34 4 42 20)(font "Arial" (font_size 10))))
+	(drawing
+	)
+)

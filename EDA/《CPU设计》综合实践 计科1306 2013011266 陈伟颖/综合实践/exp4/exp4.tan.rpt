@@ -1,0 +1,325 @@
+Timing Analyzer report for exp4
+Tue Jul 07 20:33:40 2015
+Version 6.0 Build 178 04/27/2006 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. tsu
+  6. tco
+  7. tpd
+  8. th
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2006 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                     ;
++------------------------------+-------+---------------+-------------+--------+--------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From   ; To     ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+--------+--------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 0.112 ns    ; MIR0   ; inst25 ; --         ; T3       ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 12.185 ns   ; inst21 ; MAR4   ; T3         ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 12.121 ns   ; U6_3   ; TX_6   ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; 1.073 ns    ; MIR3   ; inst22 ; --         ; T3       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;        ;        ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+--------+--------+------------+----------+--------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                             ;
++-------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                ; Setting            ; From ; To ; Entity Name ;
++-------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                           ; EPM240T100C5       ;      ;    ;             ;
+; Timing Models                                         ; Final              ;      ;    ;             ;
+; Number of source nodes to report per destination node ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                 ; 10                 ;      ;    ;             ;
+; Number of paths to report                             ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                          ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                            ; Off                ;      ;    ;             ;
+; Default hold multicycle                               ; Same As Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains             ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                        ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                      ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                 ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements               ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                      ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                  ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                         ; Off                ;      ;    ;             ;
++-------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; T3              ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++--------------------------------------------------------------+
+; tsu                                                          ;
++-------+--------------+------------+------+--------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To     ; To Clock ;
++-------+--------------+------------+------+--------+----------+
+; N/A   ; None         ; 0.112 ns   ; MIR0 ; inst25 ; T3       ;
+; N/A   ; None         ; 0.106 ns   ; MIR4 ; inst21 ; T3       ;
+; N/A   ; None         ; 0.012 ns   ; MIR6 ; inst19 ; T3       ;
+; N/A   ; None         ; -0.138 ns  ; MIR2 ; inst23 ; T3       ;
+; N/A   ; None         ; -0.507 ns  ; MIR1 ; inst24 ; T3       ;
+; N/A   ; None         ; -0.509 ns  ; MIR5 ; inst20 ; T3       ;
+; N/A   ; None         ; -0.519 ns  ; MIR3 ; inst22 ; T3       ;
++-------+--------------+------------+------+--------+----------+
+
+
++----------------------------------------------------------------+
+; tco                                                            ;
++-------+--------------+------------+--------+------+------------+
+; Slack ; Required tco ; Actual tco ; From   ; To   ; From Clock ;
++-------+--------------+------------+--------+------+------------+
+; N/A   ; None         ; 12.185 ns  ; inst21 ; MAR4 ; T3         ;
+; N/A   ; None         ; 11.713 ns  ; inst19 ; MAR6 ; T3         ;
+; N/A   ; None         ; 11.528 ns  ; inst25 ; MAR0 ; T3         ;
+; N/A   ; None         ; 11.500 ns  ; inst24 ; MAR1 ; T3         ;
+; N/A   ; None         ; 11.487 ns  ; inst22 ; MAR3 ; T3         ;
+; N/A   ; None         ; 11.430 ns  ; inst20 ; MAR5 ; T3         ;
+; N/A   ; None         ; 11.393 ns  ; inst23 ; MAR2 ; T3         ;
++-------+--------------+------------+--------+------+------------+
+
+
++---------------------------------------------------------------+
+; tpd                                                           ;
++-------+-------------------+-----------------+-------+---------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To      ;
++-------+-------------------+-----------------+-------+---------+
+; N/A   ; None              ; 12.121 ns       ; U6_3  ; TX_6    ;
+; N/A   ; None              ; 11.763 ns       ; U6_2  ; TX_6    ;
+; N/A   ; None              ; 11.449 ns       ; U6_1  ; TX_7    ;
+; N/A   ; None              ; 11.440 ns       ; U6_1  ; TX_6    ;
+; N/A   ; None              ; 11.319 ns       ; U6_45 ; TX_6    ;
+; N/A   ; None              ; 11.283 ns       ; U6_3  ; TX_5    ;
+; N/A   ; None              ; 11.266 ns       ; U6_3  ; TX_7    ;
+; N/A   ; None              ; 11.259 ns       ; U6_2  ; TX_7    ;
+; N/A   ; None              ; 11.062 ns       ; U6_3  ; TX_4    ;
+; N/A   ; None              ; 10.925 ns       ; U6_2  ; TX_5    ;
+; N/A   ; None              ; 10.830 ns       ; U6_45 ; TX_7    ;
+; N/A   ; None              ; 10.816 ns       ; U6_1  ; TX_4    ;
+; N/A   ; None              ; 10.704 ns       ; U6_2  ; TX_4    ;
+; N/A   ; None              ; 10.602 ns       ; U6_1  ; TX_5    ;
+; N/A   ; None              ; 10.532 ns       ; U6_45 ; TX_4    ;
+; N/A   ; None              ; 10.481 ns       ; U6_45 ; TX_5    ;
+; N/A   ; None              ; 10.416 ns       ; U6_3  ; P1      ;
+; N/A   ; None              ; 10.076 ns       ; IR0   ; TX_7    ;
+; N/A   ; None              ; 10.058 ns       ; U6_2  ; P1      ;
+; N/A   ; None              ; 9.860 ns        ; IR3   ; TX_6    ;
+; N/A   ; None              ; 9.843 ns        ; RIL   ; TX_6    ;
+; N/A   ; None              ; 9.842 ns        ; CY    ; TX_4    ;
+; N/A   ; None              ; 9.792 ns        ; U6_1  ; P12     ;
+; N/A   ; None              ; 9.750 ns        ; U6_1  ; P11     ;
+; N/A   ; None              ; 9.745 ns        ; T4    ; TX_7    ;
+; N/A   ; None              ; 9.735 ns        ; U6_3  ; P7      ;
+; N/A   ; None              ; 9.735 ns        ; U6_1  ; P1      ;
+; N/A   ; None              ; 9.709 ns        ; U6_3  ; P12     ;
+; N/A   ; None              ; 9.688 ns        ; U5_1  ; PCBUS   ;
+; N/A   ; None              ; 9.669 ns        ; U6_1  ; CN      ;
+; N/A   ; None              ; 9.665 ns        ; U5_1  ; SWBUS   ;
+; N/A   ; None              ; 9.655 ns        ; IR5   ; TX_6    ;
+; N/A   ; None              ; 9.653 ns        ; U5_1  ; ALUBUS  ;
+; N/A   ; None              ; 9.651 ns        ; U6_3  ; P11     ;
+; N/A   ; None              ; 9.630 ns        ; U6_3  ; P10     ;
+; N/A   ; None              ; 9.614 ns        ; U6_45 ; P1      ;
+; N/A   ; None              ; 9.608 ns        ; U6_2  ; P12     ;
+; N/A   ; None              ; 9.607 ns        ; U6_3  ; P7N     ;
+; N/A   ; None              ; 9.592 ns        ; U6_3  ; CN      ;
+; N/A   ; None              ; 9.590 ns        ; U6_1  ; P4      ;
+; N/A   ; None              ; 9.570 ns        ; U6_3  ; LDPC    ;
+; N/A   ; None              ; 9.565 ns        ; U6_2  ; P11     ;
+; N/A   ; None              ; 9.543 ns        ; U6_3  ; LDR1N   ;
+; N/A   ; None              ; 9.531 ns        ; U6_3  ; P9      ;
+; N/A   ; None              ; 9.490 ns        ; U6_2  ; CN      ;
+; N/A   ; None              ; 9.488 ns        ; U5_3  ; PCBUS   ;
+; N/A   ; None              ; 9.483 ns        ; U6_1  ; P2      ;
+; N/A   ; None              ; 9.478 ns        ; U5_2  ; PCBUS   ;
+; N/A   ; None              ; 9.460 ns        ; U5_3  ; ALUBUS  ;
+; N/A   ; None              ; 9.460 ns        ; U6_2  ; P5      ;
+; N/A   ; None              ; 9.454 ns        ; U5_3  ; SWBUS   ;
+; N/A   ; None              ; 9.450 ns        ; U5_2  ; ALUBUS  ;
+; N/A   ; None              ; 9.434 ns        ; U5_2  ; SWBUS   ;
+; N/A   ; None              ; 9.412 ns        ; U6_3  ; P5      ;
+; N/A   ; None              ; 9.400 ns        ; U6_2  ; P4      ;
+; N/A   ; None              ; 9.394 ns        ; T4    ; TX_6    ;
+; N/A   ; None              ; 9.376 ns        ; U6_3  ; LDR3N   ;
+; N/A   ; None              ; 9.370 ns        ; U5_1  ; RDBUS   ;
+; N/A   ; None              ; 9.370 ns        ; U5_1  ; RSBUS   ;
+; N/A   ; None              ; 9.350 ns        ; T4    ; TX_5    ;
+; N/A   ; None              ; 9.307 ns        ; IR2   ; TX_7    ;
+; N/A   ; None              ; 9.290 ns        ; U6_2  ; P2      ;
+; N/A   ; None              ; 9.285 ns        ; U6_45 ; P12     ;
+; N/A   ; None              ; 9.279 ns        ; U6_1  ; P7      ;
+; N/A   ; None              ; 9.260 ns        ; IR1   ; TX_6    ;
+; N/A   ; None              ; 9.255 ns        ; U5_1  ; R2BUSN  ;
+; N/A   ; None              ; 9.240 ns        ; IR4   ; TX_7    ;
+; N/A   ; None              ; 9.230 ns        ; U6_3  ; P4      ;
+; N/A   ; None              ; 9.227 ns        ; U6_45 ; P11     ;
+; N/A   ; None              ; 9.227 ns        ; U6_2  ; P6      ;
+; N/A   ; None              ; 9.211 ns        ; a0F   ; TX_5    ;
+; N/A   ; None              ; 9.180 ns        ; U6_3  ; P6      ;
+; N/A   ; None              ; 9.176 ns        ; U6_1  ; P10     ;
+; N/A   ; None              ; 9.172 ns        ; T4    ; TX_4    ;
+; N/A   ; None              ; 9.168 ns        ; U6_45 ; CN      ;
+; N/A   ; None              ; 9.151 ns        ; U6_1  ; P7N     ;
+; N/A   ; None              ; 9.116 ns        ; U6_1  ; LDPC    ;
+; N/A   ; None              ; 9.102 ns        ; U6_3  ; P2      ;
+; N/A   ; None              ; 9.089 ns        ; U6_1  ; LDR1N   ;
+; N/A   ; None              ; 9.077 ns        ; U6_1  ; P9      ;
+; N/A   ; None              ; 9.030 ns        ; U5_2  ; RDBUS   ;
+; N/A   ; None              ; 9.030 ns        ; U5_2  ; RSBUS   ;
+; N/A   ; None              ; 9.009 ns        ; U6_2  ; LDR3N   ;
+; N/A   ; None              ; 8.998 ns        ; U6_2  ; P7      ;
+; N/A   ; None              ; 8.996 ns        ; U6_45 ; LDR3N   ;
+; N/A   ; None              ; 8.971 ns        ; U6_45 ; P4      ;
+; N/A   ; None              ; 8.944 ns        ; T4    ; CLK_273 ;
+; N/A   ; None              ; 8.910 ns        ; U5_2  ; R2BUSN  ;
+; N/A   ; None              ; 8.905 ns        ; U6_1  ; P5      ;
+; N/A   ; None              ; 8.895 ns        ; U6_2  ; P10     ;
+; N/A   ; None              ; 8.870 ns        ; U6_2  ; P7N     ;
+; N/A   ; None              ; 8.865 ns        ; U4_1  ; CLK_273 ;
+; N/A   ; None              ; 8.834 ns        ; U6_45 ; P2      ;
+; N/A   ; None              ; 8.833 ns        ; U6_2  ; LDPC    ;
+; N/A   ; None              ; 8.806 ns        ; U6_2  ; LDR1N   ;
+; N/A   ; None              ; 8.794 ns        ; U6_2  ; P9      ;
+; N/A   ; None              ; 8.793 ns        ; U6_45 ; P5      ;
+; N/A   ; None              ; 8.747 ns        ; U6_45 ; P6      ;
+; N/A   ; None              ; 8.745 ns        ; U5_3  ; RDBUS   ;
+; N/A   ; None              ; 8.745 ns        ; U5_3  ; RSBUS   ;
+; N/A   ; None              ; 8.626 ns        ; U5_3  ; R2BUSN  ;
+; N/A   ; None              ; 8.615 ns        ; IR6   ; TX_5    ;
+; N/A   ; None              ; 8.504 ns        ; IR7   ; TX_4    ;
+; N/A   ; None              ; 8.501 ns        ; U6_1  ; LDR3N   ;
+; N/A   ; None              ; 8.487 ns        ; U6_1  ; P6      ;
+; N/A   ; None              ; 8.474 ns        ; U4_2  ; CLK_273 ;
+; N/A   ; None              ; 8.428 ns        ; U6_3  ; P3      ;
+; N/A   ; None              ; 8.374 ns        ; U6_1  ; P3      ;
+; N/A   ; None              ; 8.306 ns        ; U6_45 ; P7      ;
+; N/A   ; None              ; 8.234 ns        ; U6_2  ; P3      ;
+; N/A   ; None              ; 8.210 ns        ; U6_45 ; P10     ;
+; N/A   ; None              ; 8.178 ns        ; U6_45 ; P7N     ;
+; N/A   ; None              ; 8.142 ns        ; U6_45 ; LDPC    ;
+; N/A   ; None              ; 8.115 ns        ; U6_45 ; LDR1N   ;
+; N/A   ; None              ; 8.103 ns        ; U6_45 ; P9      ;
+; N/A   ; None              ; 8.090 ns        ; U6_45 ; P3      ;
+; N/A   ; None              ; 7.960 ns        ; U4_1  ; LDDR1   ;
+; N/A   ; None              ; 7.950 ns        ; U4_1  ; LDDR2   ;
+; N/A   ; None              ; 7.940 ns        ; U4_1  ; LDIRN   ;
+; N/A   ; None              ; 7.850 ns        ; U4_2  ; LDDR1   ;
+; N/A   ; None              ; 7.840 ns        ; U4_2  ; LDDR2   ;
+; N/A   ; None              ; 7.829 ns        ; U4_2  ; LDIRN   ;
++-------+-------------------+-----------------+-------+---------+
+
+
++--------------------------------------------------------------------+
+; th                                                                 ;
++---------------+-------------+-----------+------+--------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To     ; To Clock ;
++---------------+-------------+-----------+------+--------+----------+
+; N/A           ; None        ; 1.073 ns  ; MIR3 ; inst22 ; T3       ;
+; N/A           ; None        ; 1.063 ns  ; MIR5 ; inst20 ; T3       ;
+; N/A           ; None        ; 1.061 ns  ; MIR1 ; inst24 ; T3       ;
+; N/A           ; None        ; 0.692 ns  ; MIR2 ; inst23 ; T3       ;
+; N/A           ; None        ; 0.542 ns  ; MIR6 ; inst19 ; T3       ;
+; N/A           ; None        ; 0.448 ns  ; MIR4 ; inst21 ; T3       ;
+; N/A           ; None        ; 0.442 ns  ; MIR0 ; inst25 ; T3       ;
++---------------+-------------+-----------+------+--------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Timing Analyzer
+    Info: Version 6.0 Build 178 04/27/2006 SJ Full Version
+    Info: Processing started: Tue Jul 07 20:33:40 2015
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off exp4 -c exp4
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "T3" is an undefined clock
+Info: No valid register-to-register data paths exist for clock "T3"
+Info: tsu for register "inst25" (data pin = "MIR0", clock pin = "T3") is 0.112 ns
+    Info: + Longest pin to register delay is 6.560 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_84; Fanout = 1; PIN Node = 'MIR0'
+        Info: 2: + IC(4.837 ns) + CELL(0.591 ns) = 6.560 ns; Loc. = LC_X2_Y3_N7; Fanout = 1; REG Node = 'inst25'
+        Info: Total cell delay = 1.723 ns ( 26.27 % )
+        Info: Total interconnect delay = 4.837 ns ( 73.73 % )
+    Info: + Micro setup delay of destination is 0.333 ns
+    Info: - Shortest clock path from clock "T3" to destination register is 6.781 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_48; Fanout = 7; CLK Node = 'T3'
+        Info: 2: + IC(4.731 ns) + CELL(0.918 ns) = 6.781 ns; Loc. = LC_X2_Y3_N7; Fanout = 1; REG Node = 'inst25'
+        Info: Total cell delay = 2.050 ns ( 30.23 % )
+        Info: Total interconnect delay = 4.731 ns ( 69.77 % )
+Info: tco from clock "T3" to destination pin "MAR4" through register "inst21" is 12.185 ns
+    Info: + Longest clock path from clock "T3" to source register is 6.781 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_48; Fanout = 7; CLK Node = 'T3'
+        Info: 2: + IC(4.731 ns) + CELL(0.918 ns) = 6.781 ns; Loc. = LC_X6_Y2_N2; Fanout = 1; REG Node = 'inst21'
+        Info: Total cell delay = 2.050 ns ( 30.23 % )
+        Info: Total interconnect delay = 4.731 ns ( 69.77 % )
+    Info: + Micro clock to output delay of source is 0.376 ns
+    Info: + Longest register to pin delay is 5.028 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X6_Y2_N2; Fanout = 1; REG Node = 'inst21'
+        Info: 2: + IC(2.706 ns) + CELL(2.322 ns) = 5.028 ns; Loc. = PIN_6; Fanout = 0; PIN Node = 'MAR4'
+        Info: Total cell delay = 2.322 ns ( 46.18 % )
+        Info: Total interconnect delay = 2.706 ns ( 53.82 % )
+Info: Longest tpd from source pin "U6_3" to destination pin "TX_6" is 12.121 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_1; Fanout = 15; PIN Node = 'U6_3'
+    Info: 2: + IC(3.017 ns) + CELL(0.740 ns) = 4.889 ns; Loc. = LC_X4_Y2_N9; Fanout = 5; COMB Node = 'a74138:inst50|19~142'
+    Info: 3: + IC(0.746 ns) + CELL(0.740 ns) = 6.375 ns; Loc. = LC_X4_Y2_N6; Fanout = 1; COMB Node = 'a7411:inst37|5~39'
+    Info: 4: + IC(0.305 ns) + CELL(0.200 ns) = 6.880 ns; Loc. = LC_X4_Y2_N7; Fanout = 1; COMB Node = 'a7411:inst37|5~40'
+    Info: 5: + IC(0.305 ns) + CELL(0.200 ns) = 7.385 ns; Loc. = LC_X4_Y2_N8; Fanout = 1; COMB Node = 'a7411:inst37|5~41'
+    Info: 6: + IC(2.414 ns) + CELL(2.322 ns) = 12.121 ns; Loc. = PIN_73; Fanout = 0; PIN Node = 'TX_6'
+    Info: Total cell delay = 5.334 ns ( 44.01 % )
+    Info: Total interconnect delay = 6.787 ns ( 55.99 % )
+Info: th for register "inst22" (data pin = "MIR3", clock pin = "T3") is 1.073 ns
+    Info: + Longest clock path from clock "T3" to destination register is 6.781 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_48; Fanout = 7; CLK Node = 'T3'
+        Info: 2: + IC(4.731 ns) + CELL(0.918 ns) = 6.781 ns; Loc. = LC_X5_Y4_N2; Fanout = 1; REG Node = 'inst22'
+        Info: Total cell delay = 2.050 ns ( 30.23 % )
+        Info: Total interconnect delay = 4.731 ns ( 69.77 % )
+    Info: + Micro hold delay of destination is 0.221 ns
+    Info: - Shortest pin to register delay is 5.929 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.132 ns) = 1.132 ns; Loc. = PIN_90; Fanout = 1; PIN Node = 'MIR3'
+        Info: 2: + IC(4.206 ns) + CELL(0.591 ns) = 5.929 ns; Loc. = LC_X5_Y4_N2; Fanout = 1; REG Node = 'inst22'
+        Info: Total cell delay = 1.723 ns ( 29.06 % )
+        Info: Total interconnect delay = 4.206 ns ( 70.94 % )
+Info: Quartus II Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Processing ended: Tue Jul 07 20:33:40 2015
+    Info: Elapsed time: 00:00:01
+
+

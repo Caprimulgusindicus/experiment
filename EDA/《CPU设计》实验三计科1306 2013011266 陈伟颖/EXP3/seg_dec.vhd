@@ -1,0 +1,44 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY seg_dec IS
+	PORT
+	(
+		din	: IN	STD_LOGIC_VECTOR(3 DOWNTO 0);
+		seg	: OUT	STD_LOGIC_VECTOR(1 TO 7)
+	);
+END seg_dec;
+ARCHITECTURE a OF seg_dec IS
+	
+BEGIN
+
+PROCESS (din)
+BEGIN
+
+CASE din IS
+	WHEN "0000" =>seg<="1111110";
+	WHEN "0001" =>seg<="0110000";
+	WHEN "0010" =>seg<="1101101";
+	WHEN "0011" =>seg<="1111001";
+	WHEN "0100" =>seg<="0110011";
+	WHEN "0101" =>seg<="1011011";
+	WHEN "0110" =>seg<="1011111";
+	WHEN "0111" =>seg<="1110000";
+	WHEN "1000" =>seg<="1111111";
+	WHEN "1001" =>seg<="1111011";
+	WHEN "1010" =>seg<="1110111";
+	WHEN "1011" =>seg<="0011111";
+	WHEN "1100" =>seg<="1001110";
+	WHEN "1101" =>seg<="0111101";
+	WHEN "1110" =>seg<="1001111";
+	WHEN "1111" =>seg<="1000111";
+	when others =>NULL;
+	
+	
+END CASE;
+
+
+END PROCESS; 
+
+END a;
